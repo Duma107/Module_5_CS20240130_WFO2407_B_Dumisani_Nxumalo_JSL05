@@ -1,39 +1,54 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #221f24; /* Dark purple background */
+    background-color: #221f24;
     color: #fff;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 40px;
+    width: auto;
 }
 
+@media screen and (max-width: 1440px) {
 h1 {
-    color: #FFD700; /* Gold color for headings */
-    font-family: 'Pacifico', cursive; /* Fun font for headings */
-    font-size: 36px; /* Larger font size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for headings */
+    font-size: 2.5rem; 
+    color: #FFD700;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.playlist-container {
+    max-width: 1100px;
+    display:contents;
+    flex-wrap: wrap;
+    justify-content: center;  
 }
 
 .playlist {
-    margin: 20px;
-    padding: 20px; /* Increased padding */
-    background-color: #6A5ACD; /* Purple background for playlists */
+    margin: 5px;
+    padding: 1px;
+    background-color: #6A5ACD;
     display: inline-block;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for playlists */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 }
 
-.song {
-    margin: 10px 0; /* Increased margin */
+.songs {
+    margin: 10px; 
+    text-align: center;
 }
 
 .song-title {
     font-weight: bold;
-    color: #FFD700; /* Gold color for song titles */
-    text-decoration: underline; /* Underline effect for song titles */
+    color: #FFD700; 
+    text-decoration: underline; 
+    justify-content: center;
 }
 
 .song-title:hover {
-    text-decoration: none; /* Remove underline on hover */
-    color: #00FF00; /* Green color on hover */
+    text-decoration: none;
+    color: #00FF00;
+}
+ul {
+    padding: 10px;
 }
